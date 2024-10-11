@@ -65,7 +65,12 @@
 
       <li>
         <strong>2. What do the colors on the status squares mean?</strong><br />
-        The colors represent the status of each URL: Green indicates a successful response, while Red indicates a failure or timeout.
+        The colors represent the status of each URL:
+        <ul>
+          <li><strong>Green:</strong> Indicates a successful response.</li>
+          <li><strong>Yellow:</strong> Indicates one failed request. This is a warning that the URL might be experiencing temporary issues.</li>
+          <li><strong>Red:</strong> Indicates two or more consecutive failed requests, signaling a more persistent problem with the URL or server.</li>
+        </ul>
       </li>
 
       <li>
@@ -81,6 +86,11 @@
       <li>
         <strong>5. Can I export or save my list of monitored URLs?</strong><br />
         Currently, API Monitor stores the list of URLs locally on your device, but it does not yet support exporting the list.
+      </li>
+
+      <li>
+        <strong>6. What does the yellow status indicate?</strong><br />
+        A yellow status means that the URL has failed one request. This serves as a warning of a potential issue. If the URL fails another request consecutively, its status will turn red, indicating a more serious problem.
       </li>
     </ul>
 
