@@ -92,6 +92,11 @@
         <strong>6. What does the yellow status indicate?</strong><br />
         A yellow status means that the URL has failed one request. This serves as a warning of a potential issue. If the URL fails another request consecutively, its status will turn red, indicating a more serious problem.
       </li>
+
+      <li>
+        <strong>7. What request type does API Monitor use?</strong><br />
+        API Monitor uses the HTTP <strong>HEAD</strong> method to check the status of each URL. The HEAD request is similar to a GET request, but it only retrieves the response headers, without the body. This allows API Monitor to efficiently check whether a URL is responding correctly without downloading the full content. In some cases, if a URL does not support HEAD requests, you may see failed statuses.
+      </li>
     </ul>
 
     <h2>Contact Support</h2>
